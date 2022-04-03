@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Forms and Inputs</title>
+    <link rel="stylesheet" href="/Company policy/Inputs_and_forms.css" />
+    <style>
+        body {
+            font-family: tahoma, san serif;
+            font-size: 15px;
+            font-weight: normal;
+            background-color: white;
+            position: relative;
+        }
+        
+        img {
+            position: relative;
+            border-radius: 80px;
+            float: right;
+            width: 250px;
+            height: 500px;
+        }
+        
+        .header {
+            display: block;
+            box-sizing: border-box;
+            border: 2px solid hsla(0, 0%, 99%, 0.904);
+            font-size: 120%;
+            font-weight: normal;
+            padding: 0 40px;
+            color: #5d9cf5;
+        }
+        
+        p {
+            background-color: #5d9cd5;
+            color: #ffff;
+            font-size: 150%;
+            border: 0.5px solid #cdcdcd;
+            border-radius: 5px;
+            padding: 20px 40px;
+            width: 10%;
+            height: 40px;
+        }
+        
+        .label {
+            position: absolute;
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            visibility: hidden;
+        }
+        
+        input[type="text"],
+        input[type="telephone"],
+        input[type="password"] {
+            width: 30%;
+            display: block;
+            box-sizing: border-box;
+            padding: 0 60px;
+            height: 70px;
+            font-family: tahoma, sans-serif;
+            font: size 120%;
+            margin-bottom: 30px;
+            border: 1px solid #cdcdcd;
+            outline: none;
+        }
+        
+        form {
+            background-color: #fcfcfc;
+            padding: 30px 40px;
+            font-family: tahoma, sans-serif;
+            font: size 120%;
+            color: black;
+        }
+        
+        input[type="text"]:focus :hover,
+        input[type="telephone"]:focus :hover,
+        input[type="password"]:focus :hover {
+            border: 1px solid #cdcdcd;
+            box-shadow: inset 2px 2px 2px, rgba(0, 0, 0, 0.5);
+        }
+        
+        input[type="submit"] {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            background-color: #5d9cd5;
+            color: #ffff;
+            padding: 25px 0;
+            border: 2px solid #5195d1;
+            border-radius: 5px;
+            width: 15%;
+        }
+        
+        div .footer {
+            padding: 15px 20px;
+            margin: 0;
+            float: left;
+            text-decoration: none;
+            color: #b9babc;
+            border: 1px solid #b9babc;
+            display: block;
+            box-sizing: border-box;
+            margin-right: 15px;
+        }
+        
+        .footer:hover {
+            background-color: #5d9cd5;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="heading">Welcome to Tachere's Blog!</h2>
+    <p>Login</p>
+
+    <!--forms-->
+    <form>
+        <label class="label" for="Username">Username:</label>
+        <input type="text" name="FirstName" id="Username" placeholder="First Name" />
+
+        <label class="label" for="phoneNo">Phone Number:</label>
+        <input type="telephone" name="tel" id="phoneNo" placeholder="Phone Number" />
+
+        <label class="label" for="Passcode">Password:</label>
+        <input type="password" name="Password" id="Passcode" placeholder="Password" />
+
+        <input type="submit" name="Submit" id="submit" value="Submit Details" />
+    </form>
+
+    <div class="group">
+        <a href="Test 2.html" class="footer">Forgot Password?</a>
+        <a href="Test.html" class="footer">Contact Us</a>
+    </div>
+</body>
+
+</html>
